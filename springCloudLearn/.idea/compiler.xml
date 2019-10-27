@@ -6,8 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springCloudLearn" />
+        <module name="ch21eurekaclient" />
+        <module name="ch21eurekaserver" />
+        <module name="ch31eurekaserver" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch2-1-eureka-client" target="1.12" />
+      <module name="ch2-1-eureka-server" target="1.12" />
+      <module name="ch3-1" target="1.12" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ch2-1-eureka-client" options="-parameters" />
+      <module name="ch2-1-eureka-server" options="-parameters" />
+      <module name="ch21" options="" />
+      <module name="ch21eurekaclient" options="-parameters" />
+      <module name="ch21eurekaserver" options="-parameters" />
+      <module name="ch31eurekaserver" options="-parameters" />
+      <module name="springCloudLearn" options="" />
+    </option>
   </component>
 </project>
